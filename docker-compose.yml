@@ -1,0 +1,17 @@
+services:
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile.local
+    volumes:
+      - ./frontend:/code
+      - /code/node_modules
+      - /code/.next
+    restart: unless-stopped
+  proxy:
+    image: caddy:latest
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    ports:
+      - 3000:3000
+    restart: unless-stopped
