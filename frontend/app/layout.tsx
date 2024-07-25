@@ -3,7 +3,7 @@ import { MenuBar } from '@/components/dom/MenuBar'
 import '@/global.css'
 
 export const metadata = {
-  title: 'The Dungeon Foundry',
+  title: 'The Dungeon Forge',
   description: 'A custom tool for designing Tabletop Minitaure Terrain',
 }
 
