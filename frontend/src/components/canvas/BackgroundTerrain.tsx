@@ -1,6 +1,6 @@
 import { useGLTF } from "@react-three/drei";
 
-export const BackgroundTerrain = (props) => {
+export const BackgroundTerrain = ({ props }: any): JSX.Element => {
   const { scene } = useGLTF('/3D/BackgroundTerrain.glb')
 
   return (

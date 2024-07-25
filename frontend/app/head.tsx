@@ -1,9 +1,9 @@
-const title = 'The Dungeon Foundry'
-const url = 'https://dungeonfoundry.tres-sims.com'
-const description = 'The easiest and fastest way to create a 3D website using React Three Fiber and NextJS'
-const author = 'Tres Sims'
+const title: string = 'The Dungeon Foundry'
+const url: string = 'https://dungeonfoundry.tres-sims.com'
+const description: string = 'The easiest and fastest way to create a 3D website using React Three Fiber and NextJS'
+const author: string = 'Tres Sims'
 
-export default function Head() {
+export default function Head(): JSX.Element {
   return (
     <>
       {/* Recommended Meta Tags */}
@@ -48,12 +48,6 @@ export default function Head() {
       <meta name='theme-color' content='#000' />
       <link rel='shortcut icon' href='/icons/apple-touch-icon.png' />
 
-      {/* 
-      Twitter Summary card
-        documentation: https://dev.twitter.com/cards/getting-started
-        Be sure validate your Twitter card markup on the documentation site. */}
-      <meta name='twitter:card' content='summary' />
-      <meta name='twitter:site' content={twitter} />
     </>
   )
 }

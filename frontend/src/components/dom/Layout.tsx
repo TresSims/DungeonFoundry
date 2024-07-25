@@ -1,10 +1,10 @@
 'use client'
 
-const Layout = ({ children }) => {
+const Layout = (props: { children: JSX.Element }) => {
 
   return (
     <div className="h-svh">
-      {children}
+      {props.children}
     </div>
   )
 }

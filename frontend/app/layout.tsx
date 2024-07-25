@@ -7,13 +7,13 @@ export const metadata = {
   description: 'A custom tool for designing Tabletop Minitaure Terrain',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout(props: { children: JSX.Element }): JSX.Element {
   return (
     <html lang='en' className='antialiased'>
       <head />
       <body>
         <MenuBar title={metadata.title} />
-        <Layout>{children}</Layout>
+        <Layout>{props.children}</Layout>
       </body>
     </html>
   )
